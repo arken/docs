@@ -1,2 +1,4 @@
-# docs
-Documentation about Arken
+# Arken Docs
+### What is Arken?
+
+
