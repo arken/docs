@@ -19,7 +19,8 @@ func main() {
 	directory := flag.String("d", ".", "the directory of static file to host")
 	flag.Parse()
 
-	http.Handle("/docs", http.FileServer(http.Dir(*directory)))
+	http.Handle("/", http.RedirectHandler("/docs/", http.StatusTemporaryRedirect))
+	http.Handle("/docs/", http.StripPrefix("/docs/", http.FileServer(http.Dir(*directory))))
 
 	log.Printf("Serving %s on HTTP port: %s\n", *directory, *port)
 	log.Fatal(http.ListenAndServe(":"+*port, nil))

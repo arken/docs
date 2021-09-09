@@ -1,9 +1,19 @@
-# Arken Docs
+# Getting Started
 ### Table of Contents
-- [Getting Started](/getting-started/quick-start.md)
-- [Contribute Storage Space](/contributing/contributing.md)
-- [Upload Data](/upload/quick-start.md)
+- [How Does Arken Work?](#how-does-arken-work)
+- [Contribute Free Disk Space to Arken](/contributing/contributing.md)
+  - [Installation](/contribute/installation.md)
+  - [Configuration](/contribute/configuration.md)
+  - [(Optional) Node Stats & Alerts](/contribute/stats-and-alerts.md)
+- [Upload Data to Arken](/upload/upload.md)
+  - [Signing up for GitHub](/upload/github.md)
+  - [Install Ark (the Arken Command-line Client)](/upload/installation.md)
+  - [Tutorial](/upload/tutorial.md)
+  - [Usage](/upload/usage.md)
+  - [Configuration](/upload/configuration.md)
+- [Frequently Asked Questions (FAQ)](frequently-asked-questions.md)
+- [Support](support.md)
 
-### What is Arken?
-Arken is a distributed storage system built to archive important open source and scientific data. Instead of requiring a central server, Arken is made up of many distributed computers all working together. These computers pool their individual resources to form a shared global storage cluster. Taking advantage of many small computers, Arken has a cheaper entry cost per node than many traditional storage systems. For example, a member of the Arken cluster can be made up of almost any computer with available storage space -- including a $35 Raspberry Pi. 
+## How does Arken Work?
+Arken makes use of the Interplanetary Filesystem ([IPFS](//ipfs.io)) to create a distributed network of computers. 
 
