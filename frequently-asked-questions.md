@@ -19,7 +19,7 @@ If anyone has experience with or can assist with non-profits, fiscal hosts, or b
 ## What is the Core Arken Cluster?
 The Core Arken Cluster is the official network hosted by the Arken community dedicated to preserving scientific and open source data. The central manifest for the Core cluster is hosted at [github.com/arken/core-manifest](https://github.com/arken/core-manifest).
 
-You can download data from the Core Cluster either by using [Ark: the Arken Command-line Client]() or by going to [files.arken.io](https://files.arken.io).
+You can download data from the Core Cluster either by using [Ark: the Arken Command-line Client](/upload) or by going to [files.arken.io](https://files.arken.io).
 
 In the future other groups may decide to create their own clusters dedicated to specific areas of research.
 
