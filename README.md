@@ -1,7 +1,7 @@
 # Getting Started
 ### Table of Contents
 - [How Does Arken Work?](#how-does-arken-work)
-- [Contribute Free Disk Space to Arken](/contributing/contributing.md)
+- [Contribute Free Disk Space to Arken](/contribute/contribute.md)
   - [Installation](/contribute/installation.md)
   - [Configuration](/contribute/configuration.md)
   - [(Optional) Node Stats & Alerts](/contribute/stats-and-alerts.md)
