@@ -9,7 +9,7 @@ free and can run Linux. (Although Linux is not required to run Arken, it's what 
 to be covering in this article. For more information on running Docker containers on Windows
 check out the link [here](https://docs.docker.com/docker-for-windows/).
 
-## Installing Docker
+## (Option 1) Installing with Docker
 ### Step 1: Installing Docker on Your Machine
 Once you've got your machine up and running, we'll need to install docker to deploy & manage the Arken container. Depending on the distribution of Linux your running on your local machine the instructions for installing docker might vary slightly. In this article we're going to focus on installing Docker on a machine running Debian. So if you're running a different form of Linux we recommend you look at the specific instructions for your distribution [here](https://docs.docker.com/engine/install/).
 
@@ -54,7 +54,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
-## Installing Arken
+### Step 6: Installing Arken as a Container
 Now that you've got Docker and Docker-Compose up and running on your computer it's time for the fun part. Let's first define our docker-compose configuration file. Put this file anywhere you want and have easy access to.
 
 Run the following to download a template Arken Config File,
@@ -79,3 +79,16 @@ sudo docker-compose up -d
 ```bash
 sudo docker-compose logs -f arken
 ```
+
+## (Option 2) Download Binary from GitHub
+1. Head over to the [Arken GitHub repository releases](https://github.com/arken/arken/releases).
+2. Copy the link to your corresponding OS and Architecture.
+3. Run `sudo curl -L "PATH-TO-RELEASE" -o /usr/local/bin/arken`
+4. Run `sudo chmod a+x /usr/local/bin/arken`
+5. (Optional) Run `sudo ln -s /usr/local/bin/arken /usr/bin/arken`
+
+## (Option 3) Build from Source
+1. Download the Ark source code git repository by running. `git clone https://github.com/arken/arken.git`
+2. Enter the repository folder by typing `cd arken`
+3. Build the application by running `go build .`
+4. Install the application by moving it to your bin by running, `cp ark /usr/bin/arken`
